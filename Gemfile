@@ -2,20 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 5.1.6'
 
-gem 'puma', '~> 3.7'
-gem 'builder'
-gem 'coffee-rails'
-gem 'font-awesome-rails'
-gem 'haml'
-gem 'jquery-rails'
-gem 'jquery-ui-rails'
-gem 'kaminari'
-gem 'nested_form'
-gem 'rack-pjax'
-gem 'remotipart'
-gem 'sass-rails'
-
-gem 'rails_admin'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', github: 'sferik/rails_admin'
+gem 'rails_admin_rollincode', '~> 1.0'
+gem "devise"
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
@@ -32,7 +22,6 @@ group :test do
   gem 'factory_bot_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
   gem 'faker'
-  gem 'database_cleaner'
 end
 
 group :production do
